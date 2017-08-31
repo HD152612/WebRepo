@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>태그실습</title>
+
+<script>
+function check() {
+   var a = document.getElementById("age").value;
+   var b = document.getElementById("weight").value;
+   
+   if(document.getElementById("male").checked){
+      if(a>=16 && a<=69 && b>=50){
+         document.getElementById("result").innerHTML="헌혈 가능합니다.";
+      }
+      else if(a>=16 && a<=69 && b<50){
+         document.getElementById("result").innerHTML="체중 미달";
+      }
+      else if(a<16 && a>69 && b>=50){
+         document.getElementById("result").innerHTML="연령 부적합";
+      }
+      else{
+         document.getElementById("result").innerHTML="헌혈 불가능";
+      }
+   }
+   if(document.getElementById("female").checked){
+      if(a>=16 && a<=69 && b>=45){
+         document.getElementById("result").innerHTML="헌혈 가능합니다.";
+      }
+      else if(a>=16 && a<=69 && b<45){
+         document.getElementById("result").innerHTML="체중 미달";
+      }
+      else if(a<16 && a>69 && b>=45){
+         document.getElementById("result").innerHTML="연령 부적합";
+      }
+      else{
+         document.getElementById("result").innerHTML="헌혈 불가능";
+      }
+   }
+}
+</script>
+
+
+
+</head>
+<body>
+	<h1>헌혈 조건 체크</h1>
+	나이 : <input type="text" id="age"  size="5">세<br>
+	성별 : <input type="radio" name="gender" id="male" checked>남자
+	<input type="radio" name="gender" id="female" >여자<br>
+	몸무게 : <input type ="text"  id="weight" size="5"> kg<br>
+	<br><input type="submit" value="헌혈 조건 체크">
+
+	<p id = "result"></p>
+
+
+
+</body>
+</html>
