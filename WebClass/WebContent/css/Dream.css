@@ -1,0 +1,38 @@
+.line{
+  margin-top: 100px;
+  width : 1500px;
+  float : left;
+  display: inline;
+  margin-bottom: 30px;
+  margin-left: 10px;
+}
+.footer{
+  font-family: "나눔고딕";
+  font-size: 10px;
+  margin-left: 30px;
+}
+ol li{
+  font-size : 25px;
+  font-family: "나눔고딕";
+}
+.exo {
+  margin-top: 30px;
+}
+.exo_p{
+  margin-top : 20px;
+  font-family: "나눔고딕";
+}
+.money {
+  margin-top : 30px;
+}
+.money_p{
+  margin-top: 20px;
+  font-family: "나눔고딕";
+}
+.computer{
+  margin-top: 30px;
+}
+.computer_p{
+  margin-top: 20px;
+  font-family: "나눔고딕";
+}
