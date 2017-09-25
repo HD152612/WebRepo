@@ -14,7 +14,7 @@
 <%
 	//자바 코드를 그대로 작성
 	String name = request.getParameter("name");
-	//if(name == null) name = DEFAULT_NAME;
+	if(name == null) name = DEFAULT_NAME;
 	//out.println("<h1>Hello, " + name + "</h1>");
 %>
 <%-- 5. Expression tag (표현식) --%>
