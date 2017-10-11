@@ -1,23 +1,4 @@
 $(document).ready(function(){
-	$('#LoginForm').submit(function(event){
-		// 자동 submit되는 기능을 막음
-		event.preventDefault();
-
-		//id, pwd값을 가져오기
-		//document.getElementById("id").value
-		var id = $('#id').val();
-		var pwd = $('#pwd').val();
-		console.log(id,pwd);
-
-		//서버로 post 방식으로 전송
-		$.post("http://httpbin.org/post", {id:id,pwd:pwd},function(data){
-		// 	//alert(data.form.id+'님 로그인되었습니다.');
-		// var myModal = $('#myModal');
-		// myModal.modal();
-		// myModal.find('.modal-body').text(data.form.id+"님 로그인 되었습니다.");
-		alertModal('로그인 정보',data.form.id+"님 로그인 되었습니다.")
-		});
-	});
 $('#signupform').submit(function(event){
   event.preventDefault();
 
