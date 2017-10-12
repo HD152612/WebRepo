@@ -41,7 +41,7 @@
       <button type="button" class="btn btn-outline-success my-2 my-sm-0" data-toggle="modal" data-target="#regModal">Sign Up</button>
     </form>
     <%  } else { %>
-    <%=user %>로 로그인 중 &nbsp;
+    홍길동으로 로그인 중 &nbsp;
     <form class="form-inline my-2 my-lg-0" id="LogoutForm"  action="/WebClass/bloglogout" method="post">
       <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Logout</button>
       </form>
@@ -52,7 +52,7 @@
 <h1 class="hello">Hello! This is MinYoung's Blog!</h1><br>
   <h2>프로필</h2>
   <p class = "profile_p">
-    <img class="profile" src="../image/profile.jpg" width="600" height="400" alt="덕선이"><br><br>
+    <img class="profile" src="/WebClass/image/profile.jpg" width="600" height="400" alt="덕선이"><br><br>
 한국디지털미디어고등학교 2학년 6반 12번 박민영</p>
 </div>
 <div>
